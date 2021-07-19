@@ -1,0 +1,142 @@
+<div class="form-background">
+    <div class="form-container">
+        <div class="form-title">
+            <h1>Registration Form</h1>
+        </div>
+        <div class="container">
+            <div class="form-horizontal">
+                <form #myForm="ngForm" (submit)="register()">
+                    <div class="form-group">
+                        <label for="userName" class="control-label">User Name: </label>
+                        <input type="text"
+                            class="form-control"
+                            id="userName"
+                            name="userName"
+                            #user = "ngModel"
+                            [(ngModel)]="userName"
+                            required
+                            minlength="3"
+                            maxlength="60">
+                    </div>
+                    <p class="text-danger"
+                        *ngIf="user.dirty && user.errors?.required">
+                        Username must not be empty
+                    </p>
+                    <p class="text-danger"
+                        *ngIf="user.dirty && user.errors?.minlength">
+                        Minimum length must be 3
+                    </p>
+                    <p></p>
+                    <div class="form-group">
+                        <label for="userPassword" class="control-label">Password: </label>
+                        <input type="text"
+                            class="form-control"
+                            id="userPassword"
+                            name="userPassword"
+                            #password = "ngModel"
+                            [(ngModel)]="userPassword"
+                            required
+                            minlength="3"
+                            maxlength="60">
+                    </div>
+                    <p class="text-danger"
+                        *ngIf="password.dirty && password.errors?.required">
+                        Password must not be empty
+                    </p>
+                    <p class="text-danger"
+                        *ngIf="password.dirty && password.errors?.minlength">
+                        Minimum length must be 3
+                    </p>
+                    <div class="form-group">
+                        <label for="userRole" class="control-label">Role:&nbsp;</label>
+                        <input type="radio"
+                            id="brokerRadio"
+                            name="role"
+                            value="Broker"
+                            [(ngModel)]="userRole"
+                            required>
+                        <label for="brokerRadio">&nbsp; Broker &nbsp;</label>
+                        <input type="radio"
+                            id="customerRadio"
+                            name="role"
+                            value="Customer"
+                            [(ngModel)]="userRole">
+                        <label for="customerRadio">&nbsp; Customer &nbsp;</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="userMobile" class="control-label">Mobile: </label>
+                        <input type="text"
+                            id="userMobile"
+                            class="form-control"
+                            name="userMobile"
+                            #mobile = "ngModel"
+                            [(ngModel)]="userMobile"
+                            required
+                            pattern="^[0-9]{10}"
+                            maxlength=10>
+                    </div>
+                    <p class="text-danger"
+                        *ngIf="mobile.dirty && mobile.errors?.required">
+                        Mobile cannot be empty
+                    </p>
+                    <p class="text-danger"
+                        *ngIf="mobile.dirty && mobile.errors?.pattern">
+                        Mobile must be 10 digit numeric
+                    </p>
+                    <div class="form-group" >
+                        <label for="userEmail" class="control-label">Email: </label>
+                        <input type="text"
+                            id="userEmail"
+                            class="form-control"
+                            name="userEmail"
+                            #email = "ngModel"
+                            [(ngModel)]="userEmail"
+                            required
+                            pattern="^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+$"
+                            maxlength="20">
+                    </div>
+                    <p class="text-danger"
+                        *ngIf="email.dirty && email.errors?.required">
+                        Email cannot be empty
+                    </p>
+                    <p class="text-danger"
+                        *ngIf="email.dirty && email.errors?.pattern">
+                        Email must be a valid email
+                    </p>
+                    <div class="form-group">
+                        <label for="userCity" class="control-label">City: </label>
+                        <input type="text"
+                            id="userCity"
+                            name="userCity"
+                            class="form-control"
+                            #city="ngModel"
+                            [(ngModel)]="userCity"
+                            required
+                            minlength="3"
+                            maxlength="20">
+                    </div>
+                    <p class="text-danger"
+                        *ngIf="city.dirty && city.errors?.required">
+                        City cannot be empty
+                    </p>
+                    <p class="text-danger"
+                        *ngIf="city.dirty && city.errors?.minlength">
+                        Minimum length must be 3
+                    </p>
+                    <p class="text-danger" *ngIf="errorBool">
+                        User name already taken
+                    </p>
+                    <div class="form-group">
+                        <a (click)="register()" *ngIf="myForm.valid">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Submit
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>    
+</div>

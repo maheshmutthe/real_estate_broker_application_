@@ -1,0 +1,157 @@
+<div class="form-background">
+    <div class="form-container">
+        <div class="form-title">
+            <h1>Add Property Form</h1>
+        </div>
+        <div class="container">
+            <div class="form-horizontal">
+                <form #myForm="ngForm">
+                    <div class="form-group">
+                        <label for="propConfig" class="control-label">Property Config: </label>
+                        <input type="text"
+                            class="form-control"
+                            id="propConfig"
+                            name="propConfig"
+                            #prop = "ngModel"
+                            [(ngModel)]="propConfig"
+                            required
+                            minlength="3"
+                            maxlength="20">
+                    </div>
+                    <p class="text-danger"
+                        *ngIf="prop.dirty && prop.errors?.required">
+                        Property Config must not be empty
+                    </p>
+                    <p class="text-danger"
+                        *ngIf="prop.dirty && prop.errors?.minlength">
+                        Minimum length must be 3
+                    </p>
+                    <div class="form-group">
+                        <label for="userRole" class="control-label">Offer Type:&nbsp;</label>
+                        <input type="radio"
+                            id="saleRadio"
+                            name="offer"
+                            value="Sale"
+                            [(ngModel)]="offerType"
+                            required>
+                        <label for="saleRadio">&nbsp; Sale &nbsp;</label>
+                        <input type="radio"
+                            id="rentRadio"
+                            name="offer"
+                            value="Rent"
+                            [(ngModel)]="offerType">
+                        <label for="rentRadio">&nbsp; Rent &nbsp;</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="offerCost" class="control-label">Offer Cost: </label>
+                        <input type="number"
+                            class="form-control"
+                            id="offerCost"
+                            name="offerCost"
+                            #cost = "ngModel"
+                            [(ngModel)]="offerCost"
+                            required
+                            minlength="3"
+                            maxlength="60">
+                    </div>
+                    <p class="text-danger"
+                        *ngIf="cost.dirty && cost.errors?.required">
+                        Offer cost must not be empty
+                    </p>
+                    <p class="text-danger"
+                        *ngIf="cost.dirty && cost.errors?.minlength">
+                        Minimum length must be 3
+                    </p>
+                    <div class="form-group">
+                        <label for="areaSqft" class="control-label">Area sqft: </label>
+                        <input type="number"
+                            id="areaSqft"
+                            class="form-control"
+                            name="areaSqft"
+                            #area = "ngModel"
+                            [(ngModel)]="areaSqft"
+                            required
+                            minlength=2>
+                    </div>
+                    <p class="text-danger"
+                        *ngIf="area.dirty && area.errors?.required">
+                        Area cannot be empty
+                    </p>
+                    <p class="text-danger"
+                        *ngIf="area.dirty && area.errors?.minlength">
+                        Area must be atleast 2 digits
+                    </p>
+                    <div class="form-group" >
+                        <label for="address" class="control-label">Address: </label>
+                        <input type="text"
+                            id="address"
+                            class="form-control"
+                            name="address"
+                            #addr = "ngModel"
+                            [(ngModel)]="address"
+                            required
+                            minlength="3"
+                            maxlength="20">
+                    </div>
+                    <p class="text-danger"
+                        *ngIf="addr.dirty && addr.errors?.required">
+                        Address cannot be empty
+                    </p>
+                    <p class="text-danger"
+                        *ngIf="addr.dirty && addr.errors?.minlength">
+                        Minimum length must be 3
+                    </p>
+                    <div class="form-group">
+                        <label for="street" class="control-label">Street: </label>
+                        <input type="text"
+                            id="street"
+                            name="street"
+                            class="form-control"
+                            #stree="ngModel"
+                            [(ngModel)]="street"
+                            required
+                            minlength="3"
+                            maxlength="20">
+                    </div>
+                    <p class="text-danger"
+                        *ngIf="stree.dirty && stree.errors?.required">
+                        Street cannot be empty
+                    </p>
+                    <p class="text-danger"
+                        *ngIf="stree.dirty && stree.errors?.minlength">
+                        Minimum length must be 3
+                    </p>
+                    <div class="form-group">
+                        <label for="userCity" class="control-label">City: </label>
+                        <input type="text"
+                            id="userCity"
+                            name="userCity"
+                            class="form-control"
+                            #cit="ngModel"
+                            [(ngModel)]="city"
+                            required
+                            minlength="3"
+                            maxlength="20">
+                    </div>
+                    <p class="text-danger"
+                        *ngIf="cit.dirty && cit.errors?.required">
+                        City cannot be empty
+                    </p>
+                    <p class="text-danger"
+                        *ngIf="cit.dirty && cit.errors?.minlength">
+                        Minimum length must be 3
+                    </p>
+                    <div class="form-group">
+                        <a (click)="addProperty()" *ngIf="myForm.valid">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Submit
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>    
+</div>

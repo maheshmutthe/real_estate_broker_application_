@@ -1,0 +1,49 @@
+<div class="form-background">
+    <div class="form-container">
+        <div class="form-title">
+            <h1>Login Form</h1>
+        </div>
+        <div class="container">
+            <div class="form-horizontal">
+                <form #myForm="ngForm" (submit)="login()">
+                    <div class="form-group">
+                        <label for="userName" class="control-label">User Name: </label>
+                        <input type="text"
+                            class="form-control"
+                            id="userName"
+                            name="userName"
+                            [(ngModel)]="userName"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="userPassword" class="control-label">User Password: </label>
+                        <input type="text"
+                            class="form-control"
+                            id="userPassword"
+                            name="userPassword"
+                            [(ngModel)]="userPassword"
+                            required>
+                    </div>
+                    <p class="text-danger" *ngIf="errorBool">
+                        Incorrect Username/Password
+                    </p>
+                    <div class="form-group">
+                        <!-- <button class="btn btn-primary">
+                           Login
+                        </button> -->
+                        <a (click)="login()" *ngIf="myForm.valid">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Submit
+                        </a>
+                    </div>            
+                </form>  
+            </div>  
+        </div>
+    </div>
+</div>
+
+
+

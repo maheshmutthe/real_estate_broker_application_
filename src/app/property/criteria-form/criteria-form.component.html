@@ -1,0 +1,72 @@
+<div class="form-background">
+    <div class="form-container">
+        <div class="form-title">
+            <h1>Find By Criteria Form</h1>
+        </div>
+        <div class="container">
+            <div class="form-horizontal">
+                <form #myForm="ngForm">
+                    <div class="form-group">
+                        <label for="propConfig" class="control-label">Property Config: </label>
+                        <input type="text"
+                            class="form-control"
+                            id="propConfig"
+                            name="propConfig"
+                            #prop = "ngModel"
+                            [(ngModel)]="config">
+                    </div>
+                    <div class="form-group">
+                        <label for="userRole" class="control-label">Offer Type:&nbsp;</label>
+                        <input type="radio"
+                            id="saleRadio"
+                            name="offer"
+                            value="Sale"
+                            [(ngModel)]="offer"
+                            required>
+                        <label for="saleRadio">&nbsp; Sale &nbsp;</label>
+                        <input type="radio"
+                            id="rentRadio"
+                            name="offer"
+                            value="Rent"
+                            [(ngModel)]="offer">
+                        <label for="rentRadio">&nbsp; Rent &nbsp;</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="userCity" class="control-label">City: </label>
+                        <input type="text"
+                            id="userCity"
+                            name="userCity"
+                            class="form-control"
+                            #cit="ngModel"
+                            [(ngModel)]="city">
+                    </div>
+                    <div class="form-group">
+                        <label for="minCost" class="control-label">Min Cost: </label>
+                        <input type="number"
+                            id="minCost"
+                            name="minCost"
+                            class="form-control"
+                            [(ngModel)]="minCost">
+                    </div>
+                    <div class="form-group">
+                        <label for="maxCost" class="control-label">Max Cost: </label>
+                        <input type="number"
+                            id="maxCost"
+                            name="maxCost"
+                            class="form-control"
+                            [(ngModel)]="maxCost">
+                    </div>
+                    <div class="form-group">
+                        <a (click)="searchCriteria()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Submit
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
