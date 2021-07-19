@@ -1,0 +1,199 @@
+2021-06-22 01:04:13,501 INFO org.springframework.boot.StartupInfoLogger [main] Starting TestingEntityInheritenceApplication using Java 11.0.11 on MAHESH with PID 7180 (C:\Users\Mahes\eclipse-workspace\Testing-Entity-Inheritence (5) (1)\Testing-Entity-Inheritence\bin\main started by Mahes in C:\Users\Mahes\eclipse-workspace\Testing-Entity-Inheritence (5) (1)\Testing-Entity-Inheritence)
+2021-06-22 01:04:13,535 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.5.0-SNAPSHOT, Spring v5.3.7
+2021-06-22 01:04:13,536 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-06-22 01:04:13,842 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-06-22 01:04:18,449 WARN org.springframework.core.log.CompositeLog [background-preinit] For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-06-22 01:04:22,929 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-22 01:04:23,166 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 220 ms. Found 6 JPA repository interfaces.
+2021-06-22 01:04:25,864 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@47c40b56' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-22 01:04:25,869 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-22 01:04:27,152 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-06-22 01:04:27,247 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-06-22 01:04:27,248 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-06-22 01:04:27,249 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-22 01:04:29,822 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-06-22 01:04:29,824 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 15433 ms
+2021-06-22 01:04:33,727 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-06-22 01:04:33,770 WARN com.zaxxer.hikari.util.DriverDataSource [main] Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-06-22 01:04:41,235 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-06-22 01:04:41,819 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-22 01:04:42,308 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-22 01:04:42,953 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-22 01:04:43,541 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+2021-06-22 01:04:43,557 WARN org.hibernate.dialect.Oracle9Dialect [main] HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2021-06-22 01:04:43,564 WARN org.hibernate.dialect.OracleDialect [main] HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2021-06-22 01:05:37,070 WARN org.hibernate.cfg.AnnotationBinder [main] HHH000457: Joined inheritance hierarchy [com.reba.entities.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2021-06-22 01:05:45,866 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-22 01:05:46,058 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-22 07:47:58,772 DEBUG org.springframework.web.filter.GenericFilterBean [main] Filter 'jwtRequestFilter' configured for use
+2021-06-22 07:47:59,748 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-22 07:48:00,836 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h42m19s490ms703µs800ns).
+2021-06-22 07:48:09,909 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16279a5d, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c7d675c, org.springframework.security.web.header.HeaderWriterFilter@16e0afab, org.springframework.security.web.authentication.logout.LogoutFilter@565030b7, com.reba.config.JwtRequestFilter@2119b989, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@981d9d2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3314f179, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f7949dc, org.springframework.security.web.session.SessionManagementFilter@4db45d, org.springframework.security.web.access.ExceptionTranslationFilter@659e003e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@36ae17ef]
+2021-06-22 07:48:14,779 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-06-22 07:48:15,305 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-22 07:48:15,313 INFO org.springframework.boot.StartupInfoLogger [main] Started TestingEntityInheritenceApplication in 24246.945 seconds (JVM running for 24254.475)
+2021-06-22 07:48:15,314 INFO org.springframework.boot.availability.ApplicationAvailabilityBean [main] Application availability state LivenessState changed to CORRECT
+2021-06-22 07:48:15,316 INFO org.springframework.boot.availability.ApplicationAvailabilityBean [main] Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-22 08:30:55,937 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-22 08:30:56,096 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-06-22 08:30:57,214 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1116 ms
+2021-06-22 08:30:59,493 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-1] JWT Token does not begin with Bearer String
+2021-06-22 08:31:02,308 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-1] JWT Token does not begin with Bearer String
+2021-06-22 08:31:07,908 INFO com.reba.control.BrokerController [http-nio-8080-exec-1] Entering addBroker()
+2021-06-22 08:31:07,955 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-1] Entering service addBroker()
+2021-06-22 08:31:48,536 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-3] JWT Token does not begin with Bearer String
+2021-06-22 08:31:48,578 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-4] JWT Token does not begin with Bearer String
+2021-06-22 08:32:15,535 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-6] JWT Token does not begin with Bearer String
+2021-06-22 08:32:16,601 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-7] JWT Token does not begin with Bearer String
+2021-06-22 08:38:10,545 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-9] JWT Token does not begin with Bearer String
+2021-06-22 08:38:24,771 INFO com.reba.control.PropertyController [http-nio-8080-exec-10] Entering listAllProperty()
+2021-06-22 08:38:24,773 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-10] Entering service listAllProperties()
+2021-06-22 08:38:40,145 INFO com.reba.control.PropertyController [http-nio-8080-exec-2] Entering listAllProperty()
+2021-06-22 08:38:40,146 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-2] Entering service listAllProperties()
+2021-06-22 08:38:53,209 INFO com.reba.control.BrokerController [http-nio-8080-exec-4] Entering findBroker()
+2021-06-22 08:38:53,211 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-4] Entering service viewBroker()
+2021-06-22 08:38:56,221 INFO com.reba.control.PropertyController [http-nio-8080-exec-6] Entering listAllProperty()
+2021-06-22 08:38:56,222 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-6] Entering service listAllProperties()
+2021-06-22 08:39:24,258 INFO com.reba.control.BrokerController [http-nio-8080-exec-8] Entering findBroker()
+2021-06-22 08:39:24,259 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-8] Entering service viewBroker()
+2021-06-22 08:41:15,790 INFO com.reba.control.PropertyController [http-nio-8080-exec-10] Entering addProperty()
+2021-06-22 08:41:15,792 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-10] Entering service addProperty()
+2021-06-22 08:41:16,959 INFO com.reba.control.BrokerController [http-nio-8080-exec-1] Entering findBroker()
+2021-06-22 08:41:16,960 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-1] Entering service viewBroker()
+2021-06-22 08:42:21,579 INFO com.reba.control.PropertyController [http-nio-8080-exec-3] Entering addProperty()
+2021-06-22 08:42:21,582 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-3] Entering service addProperty()
+2021-06-22 08:42:21,754 INFO com.reba.control.BrokerController [http-nio-8080-exec-4] Entering findBroker()
+2021-06-22 08:42:21,755 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-4] Entering service viewBroker()
+2021-06-22 08:44:30,912 INFO com.reba.control.BrokerController [http-nio-8080-exec-6] Entering findBroker()
+2021-06-22 08:44:30,913 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-6] Entering service viewBroker()
+2021-06-22 08:44:53,723 INFO com.reba.control.BrokerController [http-nio-8080-exec-8] Entering findBroker()
+2021-06-22 08:44:53,726 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-8] Entering service viewBroker()
+2021-06-22 08:45:11,482 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-10] JWT Token does not begin with Bearer String
+2021-06-22 08:45:11,736 INFO com.reba.control.PropertyController [http-nio-8080-exec-1] Entering listAllProperty()
+2021-06-22 08:45:11,737 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-1] Entering service listAllProperties()
+2021-06-22 08:45:14,969 INFO com.reba.control.CustomerController [http-nio-8080-exec-3] Entering findCustomer()
+2021-06-22 08:45:14,970 INFO com.reba.service.CustomerServiceImpl [http-nio-8080-exec-3] Entering service viewCustomer()
+2021-06-22 08:45:51,726 INFO com.reba.control.PropertyController [http-nio-8080-exec-5] Entering listAllProperty()
+2021-06-22 08:45:51,728 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-5] Entering service listAllProperties()
+2021-06-22 08:46:05,876 INFO com.reba.control.PropertyController [http-nio-8080-exec-7] Entering listAllProperty()
+2021-06-22 08:46:05,877 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-7] Entering service listAllProperties()
+2021-06-22 08:46:13,242 INFO com.reba.control.PropertyController [http-nio-8080-exec-8] Entering findByCriteria()
+2021-06-22 08:46:13,244 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-8] Entering service listPropertyByCriteria()
+2021-06-22 08:46:39,935 INFO com.reba.control.DealController [http-nio-8080-exec-10] Entering addDeal()
+2021-06-22 08:46:39,936 INFO com.reba.service.DealServiceImpl [http-nio-8080-exec-10] Entering service addDeal()
+2021-06-22 08:46:40,908 INFO com.reba.control.CustomerController [http-nio-8080-exec-1] Entering findCustomer()
+2021-06-22 08:46:40,909 INFO com.reba.service.CustomerServiceImpl [http-nio-8080-exec-1] Entering service viewCustomer()
+2021-06-22 09:18:42,615 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-3] JWT Token does not begin with Bearer String
+2021-06-22 09:18:45,136 INFO com.reba.control.CustomerController [http-nio-8080-exec-3] Entering addCustomer()
+2021-06-22 09:18:45,154 INFO com.reba.service.CustomerServiceImpl [http-nio-8080-exec-3] Entering service addCustomer()
+2021-06-22 09:19:24,514 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-5] JWT Token does not begin with Bearer String
+2021-06-22 09:19:25,416 INFO com.reba.control.PropertyController [http-nio-8080-exec-6] Entering listAllProperty()
+2021-06-22 09:19:25,416 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-6] Entering service listAllProperties()
+2021-06-22 09:19:34,213 INFO com.reba.control.DealController [http-nio-8080-exec-8] Entering addDeal()
+2021-06-22 09:19:34,213 INFO com.reba.service.DealServiceImpl [http-nio-8080-exec-8] Entering service addDeal()
+2021-06-22 09:19:35,069 INFO com.reba.control.PropertyController [http-nio-8080-exec-9] Entering listAllProperty()
+2021-06-22 09:19:35,072 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-9] Entering service listAllProperties()
+2021-06-22 10:15:01,113 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-1] JWT Token does not begin with Bearer String
+2021-06-22 10:15:01,113 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-2] JWT Token does not begin with Bearer String
+2021-06-22 10:15:05,438 INFO com.reba.control.PropertyController [http-nio-8080-exec-3] Entering listAllProperty()
+2021-06-22 10:15:05,526 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-3] Entering service listAllProperties()
+2021-06-22 10:15:58,340 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-6] JWT Token does not begin with Bearer String
+2021-06-22 10:15:58,740 INFO com.reba.control.PropertyController [http-nio-8080-exec-7] Entering listAllProperty()
+2021-06-22 10:15:58,740 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-7] Entering service listAllProperties()
+2021-06-22 10:16:40,584 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-9] JWT Token does not begin with Bearer String
+2021-06-22 10:16:40,963 INFO com.reba.control.PropertyController [http-nio-8080-exec-10] Entering listAllProperty()
+2021-06-22 10:16:40,963 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-10] Entering service listAllProperties()
+2021-06-22 10:16:45,489 INFO com.reba.control.BrokerController [http-nio-8080-exec-2] Entering findBroker()
+2021-06-22 10:16:45,518 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-2] Entering service viewBroker()
+2021-06-22 10:17:38,901 INFO com.reba.control.PropertyController [http-nio-8080-exec-4] Entering addProperty()
+2021-06-22 10:17:38,902 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-4] Entering service addProperty()
+2021-06-22 10:17:39,979 INFO com.reba.control.BrokerController [http-nio-8080-exec-5] Entering findBroker()
+2021-06-22 10:17:39,980 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-5] Entering service viewBroker()
+2021-06-22 10:17:58,812 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-7] JWT Token does not begin with Bearer String
+2021-06-22 10:18:01,875 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-9] JWT Token does not begin with Bearer String
+2021-06-22 10:18:02,025 INFO com.reba.control.PropertyController [http-nio-8080-exec-10] Entering listAllProperty()
+2021-06-22 10:18:02,026 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-10] Entering service listAllProperties()
+2021-06-22 10:18:12,416 INFO com.reba.control.PropertyController [http-nio-8080-exec-2] Entering listAllProperty()
+2021-06-22 10:18:12,417 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-2] Entering service listAllProperties()
+2021-06-22 13:34:03,137 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-4] JWT Token does not begin with Bearer String
+2021-06-22 13:34:07,559 INFO com.reba.control.BrokerController [http-nio-8080-exec-4] Entering addBroker()
+2021-06-22 13:34:07,673 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-4] Entering service addBroker()
+2021-06-22 13:34:28,490 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-6] JWT Token does not begin with Bearer String
+2021-06-22 13:34:29,601 INFO com.reba.control.PropertyController [http-nio-8080-exec-7] Entering listAllProperty()
+2021-06-22 13:34:29,602 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-7] Entering service listAllProperties()
+2021-06-22 13:34:47,002 INFO com.reba.control.BrokerController [http-nio-8080-exec-9] Entering findBroker()
+2021-06-22 13:34:47,219 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-9] Entering service viewBroker()
+2021-06-22 13:36:01,705 INFO com.reba.control.PropertyController [http-nio-8080-exec-1] Entering addProperty()
+2021-06-22 13:36:01,706 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-1] Entering service addProperty()
+2021-06-22 13:36:02,072 INFO com.reba.control.BrokerController [http-nio-8080-exec-2] Entering findBroker()
+2021-06-22 13:36:02,073 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-2] Entering service viewBroker()
+2021-06-22 13:37:31,462 INFO com.reba.control.PropertyController [http-nio-8080-exec-4] Entering addProperty()
+2021-06-22 13:37:31,463 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-4] Entering service addProperty()
+2021-06-22 13:37:31,618 INFO com.reba.control.BrokerController [http-nio-8080-exec-5] Entering findBroker()
+2021-06-22 13:37:31,618 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-5] Entering service viewBroker()
+2021-06-22 15:10:42,256 INFO com.reba.control.CustomerController [http-nio-8080-exec-2] Entering addCustomer()
+2021-06-22 15:10:42,256 INFO com.reba.control.CustomerController [http-nio-8080-exec-8] Entering addCustomer()
+2021-06-22 15:10:42,256 INFO com.reba.control.CustomerController [http-nio-8080-exec-9] Entering addCustomer()
+2021-06-22 15:10:42,256 INFO com.reba.control.CustomerController [http-nio-8080-exec-7] Entering addCustomer()
+2021-06-22 15:10:42,256 INFO com.reba.control.CustomerController [http-nio-8080-exec-10] Entering addCustomer()
+2021-06-22 15:10:42,256 INFO com.reba.control.CustomerController [http-nio-8080-exec-1] Entering addCustomer()
+2021-06-22 15:10:43,102 INFO com.reba.service.CustomerServiceImpl [http-nio-8080-exec-1] Entering service addCustomer()
+2021-06-22 15:10:43,102 INFO com.reba.service.CustomerServiceImpl [http-nio-8080-exec-2] Entering service addCustomer()
+2021-06-22 15:10:43,102 INFO com.reba.service.CustomerServiceImpl [http-nio-8080-exec-8] Entering service addCustomer()
+2021-06-22 15:10:43,102 INFO com.reba.service.CustomerServiceImpl [http-nio-8080-exec-9] Entering service addCustomer()
+2021-06-22 15:10:43,102 INFO com.reba.service.CustomerServiceImpl [http-nio-8080-exec-7] Entering service addCustomer()
+2021-06-22 15:10:43,102 INFO com.reba.service.CustomerServiceImpl [http-nio-8080-exec-10] Entering service addCustomer()
+2021-06-22 15:11:09,622 INFO com.reba.control.CustomerController [http-nio-8080-exec-8] Entering addCustomer()
+2021-06-22 15:11:09,662 INFO com.reba.service.CustomerServiceImpl [http-nio-8080-exec-8] Entering service addCustomer()
+2021-06-22 15:11:10,318 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] SQL Error: 1, SQLState: 23000
+2021-06-22 15:11:10,318 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-8] SQL Error: 1, SQLState: 23000
+2021-06-22 15:11:10,318 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-9] SQL Error: 1, SQLState: 23000
+2021-06-22 15:11:10,318 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] SQL Error: 1, SQLState: 23000
+2021-06-22 15:11:10,318 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] SQL Error: 1, SQLState: 23000
+2021-06-22 15:11:10,318 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-10] SQL Error: 1, SQLState: 23000
+2021-06-22 15:11:10,799 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] ORA-00001: unique constraint (SYSTEM.SYS_C007388) violated
+
+2021-06-22 15:11:10,799 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] ORA-00001: unique constraint (SYSTEM.SYS_C007388) violated
+
+2021-06-22 15:11:10,799 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] ORA-00001: unique constraint (SYSTEM.SYS_C007388) violated
+
+2021-06-22 15:11:10,799 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-8] ORA-00001: unique constraint (SYSTEM.SYS_C007388) violated
+
+2021-06-22 15:11:10,799 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-10] ORA-00001: unique constraint (SYSTEM.SYS_C007388) violated
+
+2021-06-22 15:11:10,799 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-9] ORA-00001: unique constraint (SYSTEM.SYS_C007388) violated
+
+2021-06-22 15:11:16,717 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-3] JWT Token does not begin with Bearer String
+2021-06-22 15:11:28,743 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-4] JWT Token does not begin with Bearer String
+2021-06-22 15:11:29,952 ERROR com.reba.exception.GlobalExceptionHandler [http-nio-8080-exec-7] ORA-00001: unique constraint (SYSTEM.SYS_C007388) violated
+
+2021-06-22 15:11:29,946 ERROR com.reba.exception.GlobalExceptionHandler [http-nio-8080-exec-10] ORA-00001: unique constraint (SYSTEM.SYS_C007388) violated
+
+2021-06-22 15:11:29,952 ERROR com.reba.exception.GlobalExceptionHandler [http-nio-8080-exec-2] ORA-00001: unique constraint (SYSTEM.SYS_C007388) violated
+
+2021-06-22 15:11:29,952 ERROR com.reba.exception.GlobalExceptionHandler [http-nio-8080-exec-1] ORA-00001: unique constraint (SYSTEM.SYS_C007388) violated
+
+2021-06-22 15:11:29,952 ERROR com.reba.exception.GlobalExceptionHandler [http-nio-8080-exec-8] ORA-00001: unique constraint (SYSTEM.SYS_C007388) violated
+
+2021-06-22 15:11:29,952 ERROR com.reba.exception.GlobalExceptionHandler [http-nio-8080-exec-9] ORA-00001: unique constraint (SYSTEM.SYS_C007388) violated
+
+2021-06-22 15:11:40,187 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-6] JWT Token does not begin with Bearer String
+2021-06-22 15:11:40,578 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-3] JWT Token does not begin with Bearer String
+2021-06-22 15:12:13,649 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-5] JWT Token does not begin with Bearer String
+2021-06-22 15:12:13,657 INFO com.reba.control.BrokerController [http-nio-8080-exec-5] Entering addBroker()
+2021-06-22 15:12:13,657 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-5] Entering service addBroker()
+2021-06-22 15:12:23,514 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-8] JWT Token does not begin with Bearer String
+2021-06-22 15:12:23,688 INFO com.reba.control.PropertyController [http-nio-8080-exec-9] Entering listAllProperty()
+2021-06-22 15:12:23,688 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-9] Entering service listAllProperties()
+2021-06-22 15:12:30,570 INFO com.reba.control.BrokerController [http-nio-8080-exec-1] Entering findBroker()
+2021-06-22 15:12:30,571 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-1] Entering service viewBroker()
+2021-06-22 15:13:10,000 INFO com.reba.control.PropertyController [http-nio-8080-exec-7] Entering addProperty()
+2021-06-22 15:13:10,001 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-7] Entering service addProperty()
+2021-06-22 15:13:10,149 INFO com.reba.control.BrokerController [http-nio-8080-exec-6] Entering findBroker()
+2021-06-22 15:13:10,149 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-6] Entering service viewBroker()
+2021-06-22 15:14:12,704 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-4] JWT Token does not begin with Bearer String
+2021-06-22 15:14:12,706 INFO com.reba.control.CustomerController [http-nio-8080-exec-4] Entering addCustomer()
+2021-06-22 15:14:12,707 INFO com.reba.service.CustomerServiceImpl [http-nio-8080-exec-4] Entering service addCustomer()
+2021-06-22 15:14:23,139 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-10] JWT Token does not begin with Bearer String
+2021-06-22 15:14:27,859 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-9] JWT Token does not begin with Bearer String
+2021-06-22 15:20:14,812 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m45s141ms714µs).
