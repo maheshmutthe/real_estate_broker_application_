@@ -1,0 +1,71 @@
+<div class="box1">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fas fa-home"></i> Reba</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="logout()"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Jumbotron-->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron">
+                <div class="container"><br>
+                    <h1>Your Assets Are Here</h1>
+                    <!-- <button class="btn btn-primary" id="profile">My Profile</button> -->
+                    <button class="btn btn-primary" id="criteria" [routerLink]="['/addProp']">Add New Property</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--New Card-->
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4" *ngFor='let prop of properties'>
+                    <div class="card mx-30">
+                        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGhvbWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <span>
+                                <h5 class="card-title">{{prop.propConfig}} </h5>
+                            </span>
+                            <span class="badge badge-secondary" id="badgee">
+                                <h5 class="animate_animated animate_bounce">{{prop.offerType}} </h5>
+                            </span>
+                            <span class="badge badge-secondary" id="badgee">
+                                <h5 class="animate_animated animate_bounce">{{prop.areaSqft}} Sq.Ft. </h5>
+                            </span>
+                            <div class="centre">
+                                <h6> {{prop.address}}, {{prop.street}},{{prop.city}} </h6>
+
+                                <h5>Rs.{{prop.offerCost}}</h5>
+                                <button id="edit" class="btn btn-info"
+                                    (click)="edit(prop.propId,prop)">
+                                    Edit
+                                </button>
+                                <span>
+                                    <button id="delete" class="btn btn-danger"
+                                        (click)="delete(prop.propId)">
+                                        Delete
+                                    </button>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End-->
+    </div>
+</div>

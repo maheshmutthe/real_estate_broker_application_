@@ -1,0 +1,356 @@
+2021-04-18 15:30:30,893 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-04-18 15:30:30,904 INFO org.springframework.boot.StartupInfoLogger [main] Starting TestingEntityInheritenceApplication using Java 15.0.1 on DESKTOP-17H4CF3 with PID 21500 (D:\Eclipse Enterprise Workspace\Spring Backend JWT\Testing-Entity-Inheritence\bin\main started by abhin in D:\Eclipse Enterprise Workspace\Spring Backend JWT\Testing-Entity-Inheritence)
+2021-04-18 15:30:30,905 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.5.0-SNAPSHOT, Spring v5.3.6
+2021-04-18 15:30:30,906 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-18 15:30:31,664 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-18 15:30:31,740 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 70 ms. Found 6 JPA repository interfaces.
+2021-04-18 15:30:32,055 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4af45442' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 15:30:32,059 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 15:30:32,500 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-04-18 15:30:32,754 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-18 15:30:32,898 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-18 15:30:32,899 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-18 15:30:33,172 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-18 15:30:33,172 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2195 ms
+2021-04-18 15:30:33,546 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-18 15:30:33,552 WARN com.zaxxer.hikari.util.DriverDataSource [main] Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-04-18 15:30:34,022 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-18 15:30:34,063 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-18 15:30:34,106 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-18 15:30:34,235 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-18 15:30:34,364 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+2021-04-18 15:30:34,373 WARN org.hibernate.dialect.Oracle9Dialect [main] HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2021-04-18 15:30:34,374 WARN org.hibernate.dialect.OracleDialect [main] HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2021-04-18 15:30:54,418 WARN org.hibernate.cfg.AnnotationBinder [main] HHH000457: Joined inheritance hierarchy [com.reba.entities.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2021-04-18 15:30:55,006 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-18 15:30:55,016 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-18 15:30:55,393 DEBUG org.springframework.web.filter.GenericFilterBean [main] Filter 'jwtRequestFilter' configured for use
+2021-04-18 15:30:55,441 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-18 15:30:55,732 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d682397, org.springframework.security.web.context.SecurityContextPersistenceFilter@4d0d568f, org.springframework.security.web.header.HeaderWriterFilter@41a3c6f5, org.springframework.security.web.authentication.logout.LogoutFilter@3d8e1fa6, com.reba.config.JwtRequestFilter@263e512e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@729c98, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1185b0b7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@444ebefd, org.springframework.security.web.session.SessionManagementFilter@739be7ec, org.springframework.security.web.access.ExceptionTranslationFilter@34cb1310, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@47393345]
+2021-04-18 15:30:55,852 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-18 15:30:56,062 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-04-18 15:30:56,082 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-18 15:30:56,089 INFO org.springframework.boot.StartupInfoLogger [main] Started TestingEntityInheritenceApplication in 25.865 seconds (JVM running for 26.417)
+2021-04-18 15:38:17,438 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-18 15:38:17,438 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-04-18 15:38:17,440 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-04-18 15:38:17,452 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-1] JWT Token does not begin with Bearer String
+2021-04-18 15:45:03,093 INFO com.reba.control.CustomerController [http-nio-8080-exec-3] Entering editCustomer()
+2021-04-18 15:45:03,094 INFO com.reba.service.CustomerServiceImpl [http-nio-8080-exec-3] Entering service editCustomer()
+2021-04-18 15:45:03,254 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-3] SQL Error: 1, SQLState: 23000
+2021-04-18 15:45:03,254 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-3] ORA-00001: unique constraint (SYSTEM.SYS_C0010380) violated
+
+2021-04-18 15:45:03,263 ERROR com.reba.exception.GlobalExceptionHandler [http-nio-8080-exec-3] ORA-00001: unique constraint (SYSTEM.SYS_C0010380) violated
+
+2021-04-18 15:47:45,084 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-5] JWT Token does not begin with Bearer String
+2021-04-18 15:47:49,802 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-6] JWT Token does not begin with Bearer String
+2021-04-18 15:58:50,451 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-8] JWT Token does not begin with Bearer String
+2021-04-18 15:59:04,633 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-9] JWT Token does not begin with Bearer String
+2021-04-18 15:59:13,280 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-10] JWT Token does not begin with Bearer String
+2021-04-18 15:59:27,264 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-1] JWT Token does not begin with Bearer String
+2021-04-18 15:59:43,324 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-2] JWT Token does not begin with Bearer String
+2021-04-18 15:59:59,197 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-3] JWT Token does not begin with Bearer String
+2021-04-18 16:03:47,868 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-5] JWT Token does not begin with Bearer String
+2021-04-18 16:04:23,102 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-6] JWT Token does not begin with Bearer String
+2021-04-18 16:06:16,163 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-04-18 16:06:16,170 INFO org.springframework.boot.StartupInfoLogger [main] Starting TestingEntityInheritenceApplication using Java 15.0.1 on DESKTOP-17H4CF3 with PID 20104 (D:\Eclipse Enterprise Workspace\Spring Backend JWT\Testing-Entity-Inheritence\bin\main started by abhin in D:\Eclipse Enterprise Workspace\Spring Backend JWT\Testing-Entity-Inheritence)
+2021-04-18 16:06:16,171 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.5.0-SNAPSHOT, Spring v5.3.6
+2021-04-18 16:06:16,171 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-18 16:06:16,844 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-18 16:06:16,925 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 74 ms. Found 6 JPA repository interfaces.
+2021-04-18 16:06:17,232 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@23f86d8a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 16:06:17,236 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 16:06:17,564 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-04-18 16:06:17,578 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-18 16:06:17,581 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-18 16:06:17,581 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-18 16:06:17,721 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-18 16:06:17,722 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1508 ms
+2021-04-18 16:06:17,934 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-18 16:06:17,938 WARN com.zaxxer.hikari.util.DriverDataSource [main] Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-04-18 16:06:18,277 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-18 16:06:18,328 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-18 16:06:18,391 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-18 16:06:18,535 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-18 16:06:18,648 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+2021-04-18 16:06:18,652 WARN org.hibernate.dialect.Oracle9Dialect [main] HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2021-04-18 16:06:18,653 WARN org.hibernate.dialect.OracleDialect [main] HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2021-04-18 16:06:38,633 WARN org.hibernate.cfg.AnnotationBinder [main] HHH000457: Joined inheritance hierarchy [com.reba.entities.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2021-04-18 16:06:39,277 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-18 16:06:39,287 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-18 16:06:39,736 DEBUG org.springframework.web.filter.GenericFilterBean [main] Filter 'jwtRequestFilter' configured for use
+2021-04-18 16:06:39,837 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-18 16:06:40,251 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5364b481, org.springframework.security.web.context.SecurityContextPersistenceFilter@2daf0cc9, org.springframework.security.web.header.HeaderWriterFilter@13087c75, org.springframework.security.web.authentication.logout.LogoutFilter@63c88994, com.reba.config.JwtRequestFilter@391e2a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@407d2a01, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29ce33e9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62ec4146, org.springframework.security.web.session.SessionManagementFilter@729c98, org.springframework.security.web.access.ExceptionTranslationFilter@37c762aa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2559f65c]
+2021-04-18 16:06:40,437 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-18 16:06:40,725 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-04-18 16:06:40,756 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-18 16:06:40,764 INFO org.springframework.boot.StartupInfoLogger [main] Started TestingEntityInheritenceApplication in 25.013 seconds (JVM running for 25.43)
+2021-04-18 16:06:54,913 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-18 16:06:54,914 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-04-18 16:06:54,914 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2021-04-18 16:06:54,925 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-1] JWT Token does not begin with Bearer String
+2021-04-18 16:06:56,820 INFO com.reba.control.BrokerController [http-nio-8080-exec-2] Entering removeBroker()
+2021-04-18 16:06:56,821 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-2] Entering service removeBroker()
+2021-04-18 16:12:37,800 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-4] JWT Token does not begin with Bearer String
+2021-04-18 16:13:30,989 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-5] JWT Token does not begin with Bearer String
+2021-04-18 16:13:31,037 INFO com.reba.control.BrokerController [http-nio-8080-exec-5] Entering addBroker()
+2021-04-18 16:13:31,038 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-5] Entering service addBroker()
+2021-04-18 16:13:38,361 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-8] JWT Token does not begin with Bearer String
+2021-04-18 16:14:24,591 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-04-18 16:14:24,598 INFO org.springframework.boot.StartupInfoLogger [main] Starting TestingEntityInheritenceApplication using Java 15.0.1 on DESKTOP-17H4CF3 with PID 13048 (D:\Eclipse Enterprise Workspace\Spring Backend JWT\Testing-Entity-Inheritence\bin\main started by abhin in D:\Eclipse Enterprise Workspace\Spring Backend JWT\Testing-Entity-Inheritence)
+2021-04-18 16:14:24,599 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.5.0-SNAPSHOT, Spring v5.3.6
+2021-04-18 16:14:24,599 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-18 16:14:25,335 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-18 16:14:25,437 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 93 ms. Found 6 JPA repository interfaces.
+2021-04-18 16:14:25,744 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4bd51d3e' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 16:14:25,747 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 16:14:26,043 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-04-18 16:14:26,052 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-18 16:14:26,053 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-18 16:14:26,053 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-18 16:14:26,145 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-18 16:14:26,145 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1494 ms
+2021-04-18 16:14:26,329 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-18 16:14:26,332 WARN com.zaxxer.hikari.util.DriverDataSource [main] Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-04-18 16:14:26,589 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-18 16:14:26,627 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-18 16:14:26,669 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-18 16:14:26,790 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-18 16:14:26,890 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+2021-04-18 16:14:26,895 WARN org.hibernate.dialect.Oracle9Dialect [main] HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2021-04-18 16:14:26,896 WARN org.hibernate.dialect.OracleDialect [main] HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2021-04-18 16:14:46,564 WARN org.hibernate.cfg.AnnotationBinder [main] HHH000457: Joined inheritance hierarchy [com.reba.entities.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2021-04-18 16:14:47,103 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-18 16:14:47,110 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-18 16:14:47,408 DEBUG org.springframework.web.filter.GenericFilterBean [main] Filter 'jwtRequestFilter' configured for use
+2021-04-18 16:14:47,453 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-18 16:14:47,704 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3bc33ad9, org.springframework.security.web.context.SecurityContextPersistenceFilter@4244e477, org.springframework.security.web.header.HeaderWriterFilter@1185b0b7, org.springframework.security.web.authentication.logout.LogoutFilter@57283fac, com.reba.config.JwtRequestFilter@5f81507a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63614cdd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3123ba75, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b35b0f4, org.springframework.security.web.session.SessionManagementFilter@404566e7, org.springframework.security.web.access.ExceptionTranslationFilter@1387bd84, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@eea0b48]
+2021-04-18 16:14:47,817 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-18 16:14:47,998 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-04-18 16:14:48,015 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-18 16:14:48,021 INFO org.springframework.boot.StartupInfoLogger [main] Started TestingEntityInheritenceApplication in 23.842 seconds (JVM running for 24.25)
+2021-04-18 16:14:57,760 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-18 16:14:57,761 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-04-18 16:14:57,762 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-04-18 16:14:57,776 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-1] JWT Token does not begin with Bearer String
+2021-04-18 16:15:01,541 INFO com.reba.control.CustomerController [http-nio-8080-exec-2] Entering removeCustomer()
+2021-04-18 16:15:01,541 INFO com.reba.service.CustomerServiceImpl [http-nio-8080-exec-2] Entering service removeCustomer()
+2021-04-18 16:15:43,353 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-3] JWT Token does not begin with Bearer String
+2021-04-18 16:15:43,409 INFO com.reba.control.CustomerController [http-nio-8080-exec-3] Entering addCustomer()
+2021-04-18 16:15:43,409 INFO com.reba.service.CustomerServiceImpl [http-nio-8080-exec-3] Entering service addCustomer()
+2021-04-18 16:16:02,536 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-4] JWT Token does not begin with Bearer String
+2021-04-18 16:21:50,183 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-6] JWT Token does not begin with Bearer String
+2021-04-18 16:23:11,011 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-8] JWT Token does not begin with Bearer String
+2021-04-18 16:24:11,661 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-10] JWT Token does not begin with Bearer String
+2021-04-18 16:29:19,922 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-2] JWT Token does not begin with Bearer String
+2021-04-18 16:29:35,793 INFO com.reba.control.BrokerController [http-nio-8080-exec-3] Entering editBroker()
+2021-04-18 16:29:35,793 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-3] Entering service editBroker()
+2021-04-18 16:29:35,877 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-3] SQL Error: 1, SQLState: 23000
+2021-04-18 16:29:35,878 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-3] ORA-00001: unique constraint (SYSTEM.SYS_C0010380) violated
+
+2021-04-18 16:29:35,884 ERROR com.reba.exception.GlobalExceptionHandler [http-nio-8080-exec-3] ORA-00001: unique constraint (SYSTEM.SYS_C0010380) violated
+
+2021-04-18 16:30:21,876 INFO com.reba.control.BrokerController [http-nio-8080-exec-4] Entering editBroker()
+2021-04-18 16:30:21,877 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-4] Entering service editBroker()
+2021-04-18 16:30:31,538 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-5] JWT Token does not begin with Bearer String
+2021-04-18 16:30:37,170 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-6] JWT Token does not begin with Bearer String
+2021-04-18 16:37:48,384 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-8] JWT Token does not begin with Bearer String
+2021-04-18 16:37:50,314 INFO com.reba.control.CustomerController [http-nio-8080-exec-9] Entering removeCustomer()
+2021-04-18 16:37:50,315 INFO com.reba.service.CustomerServiceImpl [http-nio-8080-exec-9] Entering service removeCustomer()
+2021-04-18 16:38:53,646 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-1] JWT Token does not begin with Bearer String
+2021-04-18 16:38:53,649 INFO com.reba.control.CustomerController [http-nio-8080-exec-1] Entering addCustomer()
+2021-04-18 16:38:53,649 INFO com.reba.service.CustomerServiceImpl [http-nio-8080-exec-1] Entering service addCustomer()
+2021-04-18 16:39:00,245 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-2] JWT Token does not begin with Bearer String
+2021-04-18 16:39:03,107 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-3] JWT Token does not begin with Bearer String
+2021-04-18 16:41:40,746 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-5] JWT Token does not begin with Bearer String
+2021-04-18 16:41:53,771 INFO com.reba.control.CustomerController [http-nio-8080-exec-7] Entering removeCustomer()
+2021-04-18 16:41:53,771 INFO com.reba.service.CustomerServiceImpl [http-nio-8080-exec-7] Entering service removeCustomer()
+2021-04-18 16:44:06,967 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-9] JWT Token does not begin with Bearer String
+2021-04-18 16:44:06,970 INFO com.reba.control.BrokerController [http-nio-8080-exec-9] Entering addBroker()
+2021-04-18 16:44:06,970 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-9] Entering service addBroker()
+2021-04-18 16:44:13,419 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-10] JWT Token does not begin with Bearer String
+2021-04-18 21:38:47,176 INFO org.springframework.boot.StartupInfoLogger [main] Starting TestingEntityInheritenceApplication using Java 15.0.1 on DESKTOP-17H4CF3 with PID 18092 (D:\Eclipse Enterprise Workspace\Spring Backend JWT\Testing-Entity-Inheritence\bin\main started by abhin in D:\Eclipse Enterprise Workspace\Spring Backend JWT\Testing-Entity-Inheritence)
+2021-04-18 21:38:47,176 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-04-18 21:38:47,188 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.5.0-SNAPSHOT, Spring v5.3.6
+2021-04-18 21:38:47,189 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-18 21:38:48,064 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-18 21:38:48,156 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 83 ms. Found 6 JPA repository interfaces.
+2021-04-18 21:38:48,468 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7601bc96' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 21:38:48,472 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 21:38:48,872 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-04-18 21:38:48,884 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-18 21:38:48,885 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-18 21:38:48,885 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-18 21:38:48,978 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-18 21:38:48,978 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1717 ms
+2021-04-18 21:38:49,190 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-18 21:38:49,193 WARN com.zaxxer.hikari.util.DriverDataSource [main] Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-04-18 21:38:49,519 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-18 21:38:49,567 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-18 21:38:49,632 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-18 21:38:49,802 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-18 21:38:49,939 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+2021-04-18 21:38:49,943 WARN org.hibernate.dialect.Oracle9Dialect [main] HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2021-04-18 21:38:49,944 WARN org.hibernate.dialect.OracleDialect [main] HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2021-04-18 21:39:09,544 WARN org.hibernate.cfg.AnnotationBinder [main] HHH000457: Joined inheritance hierarchy [com.reba.entities.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2021-04-18 21:39:10,075 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-18 21:39:10,083 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-18 21:39:10,443 DEBUG org.springframework.web.filter.GenericFilterBean [main] Filter 'jwtRequestFilter' configured for use
+2021-04-18 21:39:10,490 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-18 21:39:10,761 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3bc33ad9, org.springframework.security.web.context.SecurityContextPersistenceFilter@2dfab167, org.springframework.security.web.header.HeaderWriterFilter@74844f8a, org.springframework.security.web.authentication.logout.LogoutFilter@45494046, com.reba.config.JwtRequestFilter@66ab088c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3123ba75, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52b49891, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b35b0f4, org.springframework.security.web.session.SessionManagementFilter@59cb10e0, org.springframework.security.web.access.ExceptionTranslationFilter@28b4b10e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66b62332]
+2021-04-18 21:39:10,877 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-18 21:39:11,071 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-04-18 21:39:11,097 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-18 21:39:11,104 INFO org.springframework.boot.StartupInfoLogger [main] Started TestingEntityInheritenceApplication in 24.593 seconds (JVM running for 25.204)
+2021-04-18 21:41:57,584 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-18 21:41:57,585 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-04-18 21:41:57,586 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-04-18 21:41:57,599 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-1] JWT Token does not begin with Bearer String
+2021-04-18 22:05:34,256 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-04-18 22:05:34,265 INFO org.springframework.boot.StartupInfoLogger [main] Starting TestingEntityInheritenceApplication using Java 15.0.1 on DESKTOP-17H4CF3 with PID 16568 (D:\Eclipse Enterprise Workspace\Spring Backend JWT\Testing-Entity-Inheritence\bin\main started by abhin in D:\Eclipse Enterprise Workspace\Spring Backend JWT\Testing-Entity-Inheritence)
+2021-04-18 22:05:34,265 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.5.0-SNAPSHOT, Spring v5.3.6
+2021-04-18 22:05:34,265 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-18 22:05:34,933 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-18 22:05:35,008 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 67 ms. Found 6 JPA repository interfaces.
+2021-04-18 22:05:35,310 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@47be0f9b' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 22:05:35,313 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 22:05:35,608 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-04-18 22:05:35,617 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-18 22:05:35,617 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-18 22:05:35,618 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-18 22:05:35,718 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-18 22:05:35,718 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1403 ms
+2021-04-18 22:05:35,923 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-18 22:05:35,927 WARN com.zaxxer.hikari.util.DriverDataSource [main] Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-04-18 22:05:36,209 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-18 22:05:36,250 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-18 22:05:36,292 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-18 22:05:36,416 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-18 22:05:36,523 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+2021-04-18 22:05:36,527 WARN org.hibernate.dialect.Oracle9Dialect [main] HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2021-04-18 22:05:36,529 WARN org.hibernate.dialect.OracleDialect [main] HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2021-04-18 22:05:56,574 WARN org.hibernate.cfg.AnnotationBinder [main] HHH000457: Joined inheritance hierarchy [com.reba.entities.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2021-04-18 22:05:57,061 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-18 22:05:57,069 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-18 22:05:57,385 DEBUG org.springframework.web.filter.GenericFilterBean [main] Filter 'jwtRequestFilter' configured for use
+2021-04-18 22:05:57,425 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-18 22:05:57,671 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@641ab175, org.springframework.security.web.context.SecurityContextPersistenceFilter@30a5a58d, org.springframework.security.web.header.HeaderWriterFilter@1f86f7da, org.springframework.security.web.authentication.logout.LogoutFilter@4c25201, com.reba.config.JwtRequestFilter@149238fe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d763ae5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63c88994, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3bc33ad9, org.springframework.security.web.session.SessionManagementFilter@1e9f48d4, org.springframework.security.web.access.ExceptionTranslationFilter@15f229e8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7d1cfe97]
+2021-04-18 22:05:57,784 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-18 22:05:57,976 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-04-18 22:05:57,995 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-18 22:05:58,001 INFO org.springframework.boot.StartupInfoLogger [main] Started TestingEntityInheritenceApplication in 24.132 seconds (JVM running for 24.559)
+2021-04-18 22:06:02,533 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-18 22:06:02,534 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-04-18 22:06:02,535 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2021-04-18 22:06:02,545 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-2] JWT Token does not begin with Bearer String
+2021-04-18 22:08:36,247 INFO com.reba.control.PropertyController [http-nio-8080-exec-1] Entering listAllProperty()
+2021-04-18 22:08:36,247 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-1] Entering service listAllProperties()
+2021-04-18 22:11:52,196 INFO com.reba.control.PropertyController [http-nio-8080-exec-5] Entering listAllProperty()
+2021-04-18 22:11:52,196 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-5] Entering service listAllProperties()
+2021-04-18 22:11:55,078 INFO com.reba.control.PropertyController [http-nio-8080-exec-9] Entering listAllProperty()
+2021-04-18 22:11:55,079 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-9] Entering service listAllProperties()
+2021-04-18 22:12:12,439 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-8] JWT Token does not begin with Bearer String
+2021-04-18 22:12:12,533 INFO com.reba.control.PropertyController [http-nio-8080-exec-7] Entering listAllProperty()
+2021-04-18 22:12:12,534 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-7] Entering service listAllProperties()
+2021-04-18 22:14:21,330 INFO com.reba.control.PropertyController [http-nio-8080-exec-10] Entering listAllProperty()
+2021-04-18 22:14:21,331 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-10] Entering service listAllProperties()
+2021-04-18 22:14:38,378 INFO com.reba.control.PropertyController [http-nio-8080-exec-2] Entering listAllProperty()
+2021-04-18 22:14:38,378 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-2] Entering service listAllProperties()
+2021-04-18 22:18:34,212 INFO com.reba.control.PropertyController [http-nio-8080-exec-1] Entering listAllProperty()
+2021-04-18 22:18:34,213 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-1] Entering service listAllProperties()
+2021-04-18 22:19:16,141 INFO com.reba.control.PropertyController [http-nio-8080-exec-4] Entering listAllProperty()
+2021-04-18 22:19:16,142 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-4] Entering service listAllProperties()
+2021-04-18 22:19:35,040 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-5] JWT Token does not begin with Bearer String
+2021-04-18 22:19:35,130 INFO com.reba.control.PropertyController [http-nio-8080-exec-9] Entering listAllProperty()
+2021-04-18 22:19:35,130 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-9] Entering service listAllProperties()
+2021-04-18 22:19:45,037 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-8] JWT Token does not begin with Bearer String
+2021-04-18 22:19:45,125 INFO com.reba.control.PropertyController [http-nio-8080-exec-7] Entering listAllProperty()
+2021-04-18 22:19:45,125 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-7] Entering service listAllProperties()
+2021-04-18 22:19:53,398 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-6] JWT Token does not begin with Bearer String
+2021-04-18 22:19:53,486 INFO com.reba.control.PropertyController [http-nio-8080-exec-10] Entering listAllProperty()
+2021-04-18 22:19:53,486 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-10] Entering service listAllProperties()
+2021-04-18 22:20:44,971 INFO com.reba.control.PropertyController [http-nio-8080-exec-2] Entering listAllProperty()
+2021-04-18 22:20:44,971 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-2] Entering service listAllProperties()
+2021-04-18 22:21:04,335 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-3] JWT Token does not begin with Bearer String
+2021-04-18 22:21:04,425 INFO com.reba.control.PropertyController [http-nio-8080-exec-1] Entering listAllProperty()
+2021-04-18 22:21:04,425 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-1] Entering service listAllProperties()
+2021-04-18 22:26:08,859 INFO com.reba.control.PropertyController [http-nio-8080-exec-5] Entering listAllProperty()
+2021-04-18 22:26:08,859 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-5] Entering service listAllProperties()
+2021-04-18 22:34:22,817 INFO com.reba.control.PropertyController [http-nio-8080-exec-8] Entering listAllProperty()
+2021-04-18 22:34:22,817 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-8] Entering service listAllProperties()
+2021-04-18 22:34:26,175 INFO com.reba.control.PropertyController [http-nio-8080-exec-7] Entering listAllProperty()
+2021-04-18 22:34:26,176 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-7] Entering service listAllProperties()
+2021-04-18 22:34:39,689 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-6] JWT Token does not begin with Bearer String
+2021-04-18 22:34:39,777 INFO com.reba.control.PropertyController [http-nio-8080-exec-10] Entering listAllProperty()
+2021-04-18 22:34:39,778 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-10] Entering service listAllProperties()
+2021-04-18 22:34:47,624 INFO com.reba.control.PropertyController [http-nio-8080-exec-2] Entering listAllProperty()
+2021-04-18 22:34:47,624 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-2] Entering service listAllProperties()
+2021-04-18 22:34:56,172 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-3] JWT Token does not begin with Bearer String
+2021-04-18 22:34:56,261 INFO com.reba.control.PropertyController [http-nio-8080-exec-1] Entering listAllProperty()
+2021-04-18 22:34:56,261 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-1] Entering service listAllProperties()
+2021-04-18 22:42:50,973 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-5] JWT Token does not begin with Bearer String
+2021-04-18 22:42:51,063 INFO com.reba.control.PropertyController [http-nio-8080-exec-9] Entering listAllProperty()
+2021-04-18 22:42:51,064 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-9] Entering service listAllProperties()
+2021-04-18 22:44:33,049 INFO com.reba.control.PropertyController [http-nio-8080-exec-7] Entering listAllProperty()
+2021-04-18 22:44:33,050 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-7] Entering service listAllProperties()
+2021-04-18 22:55:13,269 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-10] JWT Token does not begin with Bearer String
+2021-04-18 22:55:13,367 INFO com.reba.control.PropertyController [http-nio-8080-exec-2] Entering listAllProperty()
+2021-04-18 22:55:13,368 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-2] Entering service listAllProperties()
+2021-04-18 22:56:11,241 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-3] JWT Token does not begin with Bearer String
+2021-04-18 22:56:11,336 INFO com.reba.control.PropertyController [http-nio-8080-exec-1] Entering listAllProperty()
+2021-04-18 22:56:11,336 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-1] Entering service listAllProperties()
+2021-04-18 23:00:52,008 INFO com.reba.control.PropertyController [http-nio-8080-exec-5] Entering listAllProperty()
+2021-04-18 23:00:52,009 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-5] Entering service listAllProperties()
+2021-04-18 23:01:21,639 INFO com.reba.control.PropertyController [http-nio-8080-exec-9] Entering listAllProperty()
+2021-04-18 23:01:21,640 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-9] Entering service listAllProperties()
+2021-04-18 23:01:57,653 INFO com.reba.control.PropertyController [http-nio-8080-exec-8] Entering listAllProperty()
+2021-04-18 23:01:57,653 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-8] Entering service listAllProperties()
+2021-04-18 23:03:58,412 INFO com.reba.control.PropertyController [http-nio-8080-exec-6] Entering listAllProperty()
+2021-04-18 23:03:58,412 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-6] Entering service listAllProperties()
+2021-04-18 23:04:43,942 INFO com.reba.control.PropertyController [http-nio-8080-exec-10] Entering listAllProperty()
+2021-04-18 23:04:43,943 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-10] Entering service listAllProperties()
+2021-04-18 23:05:07,985 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-2] JWT Token does not begin with Bearer String
+2021-04-18 23:05:08,082 INFO com.reba.control.PropertyController [http-nio-8080-exec-3] Entering listAllProperty()
+2021-04-18 23:05:08,082 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-3] Entering service listAllProperties()
+2021-04-18 23:05:10,106 INFO com.reba.control.CustomerController [http-nio-8080-exec-1] Entering findCustomer()
+2021-04-18 23:05:10,107 INFO com.reba.service.CustomerServiceImpl [http-nio-8080-exec-1] Entering service viewCustomer()
+2021-04-18 23:06:40,256 INFO com.reba.control.CustomerController [http-nio-8080-exec-5] Entering findCustomer()
+2021-04-18 23:06:40,256 INFO com.reba.service.CustomerServiceImpl [http-nio-8080-exec-5] Entering service viewCustomer()
+2021-04-18 23:08:37,723 INFO com.reba.control.CustomerController [http-nio-8080-exec-8] Entering findCustomer()
+2021-04-18 23:08:37,723 INFO com.reba.service.CustomerServiceImpl [http-nio-8080-exec-8] Entering service viewCustomer()
+2021-04-18 23:08:49,209 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-7] JWT Token does not begin with Bearer String
+2021-04-18 23:08:49,298 INFO com.reba.control.PropertyController [http-nio-8080-exec-6] Entering listAllProperty()
+2021-04-18 23:08:49,298 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-6] Entering service listAllProperties()
+2021-04-18 23:08:52,028 INFO com.reba.control.BrokerController [http-nio-8080-exec-10] Entering findBroker()
+2021-04-18 23:08:52,028 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-10] Entering service viewBroker()
+2021-04-18 23:11:12,737 INFO com.reba.control.BrokerController [http-nio-8080-exec-3] Entering findBroker()
+2021-04-18 23:11:12,738 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-3] Entering service viewBroker()
+2021-04-18 23:12:23,094 INFO com.reba.control.BrokerController [http-nio-8080-exec-4] Entering findBroker()
+2021-04-18 23:12:23,095 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-4] Entering service viewBroker()
+2021-04-18 23:13:20,937 INFO com.reba.control.BrokerController [http-nio-8080-exec-5] Entering findBroker()
+2021-04-18 23:13:20,937 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-5] Entering service viewBroker()
+2021-04-18 23:13:34,186 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-9] JWT Token does not begin with Bearer String
+2021-04-18 23:13:34,281 INFO com.reba.control.PropertyController [http-nio-8080-exec-8] Entering listAllProperty()
+2021-04-18 23:13:34,281 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-8] Entering service listAllProperties()
+2021-04-18 23:13:35,942 INFO com.reba.control.BrokerController [http-nio-8080-exec-7] Entering findBroker()
+2021-04-18 23:13:35,943 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-7] Entering service viewBroker()
+2021-04-18 23:13:56,508 INFO com.reba.control.BrokerController [http-nio-8080-exec-6] Entering findBroker()
+2021-04-18 23:13:56,508 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-6] Entering service viewBroker()
+2021-04-18 23:14:11,605 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-10] JWT Token does not begin with Bearer String
+2021-04-18 23:14:11,701 INFO com.reba.control.PropertyController [http-nio-8080-exec-2] Entering listAllProperty()
+2021-04-18 23:14:11,701 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-2] Entering service listAllProperties()
+2021-04-18 23:14:13,114 INFO com.reba.control.BrokerController [http-nio-8080-exec-3] Entering findBroker()
+2021-04-18 23:14:13,115 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-3] Entering service viewBroker()
+2021-04-18 23:14:47,338 INFO com.reba.control.BrokerController [http-nio-8080-exec-1] Entering findBroker()
+2021-04-18 23:14:47,339 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-1] Entering service viewBroker()
+2021-04-18 23:14:57,931 WARN com.reba.config.JwtRequestFilter [http-nio-8080-exec-4] JWT Token does not begin with Bearer String
+2021-04-18 23:14:58,031 INFO com.reba.control.PropertyController [http-nio-8080-exec-5] Entering listAllProperty()
+2021-04-18 23:14:58,031 INFO com.reba.service.PropertyServiceImpl [http-nio-8080-exec-5] Entering service listAllProperties()
+2021-04-18 23:14:58,885 INFO com.reba.control.BrokerController [http-nio-8080-exec-9] Entering findBroker()
+2021-04-18 23:14:58,886 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-9] Entering service viewBroker()
+2021-04-18 23:16:03,788 INFO com.reba.control.BrokerController [http-nio-8080-exec-7] Entering findBroker()
+2021-04-18 23:16:03,789 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-7] Entering service viewBroker()
+2021-04-18 23:19:10,378 INFO com.reba.control.BrokerController [http-nio-8080-exec-10] Entering findBroker()
+2021-04-18 23:19:10,379 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-10] Entering service viewBroker()
+2021-04-18 23:19:18,539 INFO com.reba.control.BrokerController [http-nio-8080-exec-2] Entering findBroker()
+2021-04-18 23:19:18,540 INFO com.reba.service.BrokerServiceImpl [http-nio-8080-exec-2] Entering service viewBroker()

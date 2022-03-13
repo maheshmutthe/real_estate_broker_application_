@@ -1,0 +1,142 @@
+.box1 {
+   margin:0;
+   padding: 0;
+   text-decoration: none;
+
+   font-family: 'Lato', sans-serif;
+   background-color: #e8e8e4;
+}
+.wrapper {
+padding-top: 120px;
+}
+.card-img-top {
+box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+.card{
+margin-top: 30px;
+
+}
+.card-body{
+  box-shadow: 0px 15px 15px -8px rgba(0,0,0,0.5)
+}
+.card-body h6 {
+color: #1da1bd;
+font-size: larger;
+text-transform: capitalize;
+}
+.card-title {
+text-transform: uppercase;
+font-weight: bold;
+font-size: 24px;
+}
+
+.card:hover{
+  -webkit-box-shadow : -1px 9px 40px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow : -1px 9px 40px -12px rgba(0,0,0,0.75);
+  box-shadow : -1px 9px 40px -12px rgba(0,0,0,0.75);
+}
+
+#badgee{
+text-transform: uppercase;
+background-color: grey;
+color:white;
+margin-right: 50px;
+}
+
+.centre{
+  text-align: center;
+}
+
+
+.navbar{
+background-color: #173e85;
+}
+
+.navbar .navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar .navbar-toggler{
+border-color: rgb(0,0,0);
+}
+.navbar-nav{
+margin-left: auto !important;
+}
+
+.navbar-brand{
+color : whitesmoke;
+}
+
+.navbar-nav .nav-item .nav-link{
+color: whitesmoke;
+}
+
+.bg-cover {
+background-attachment: static;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.jumbotron{
+background-size: cover;
+background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%);
+background-image: url(https://placeimg.com/1000/480/nature);
+height: 350px;
+}
+.jumbotron h1{
+text-align: center;
+margin-top: 0px;
+
+}
+
+.jumbotron p{
+text-align: center;
+}
+
+.jumbotron a{
+margin-left: 15px;
+}
+
+.jumbotron .btn{
+border-radius: 30px;
+background: transparent;
+color: black;
+margin-top: 10%;
+margin-right:3%;
+}
+.jumbotron .btn:hover{
+background-color: #5f0f40;
+color: whitesmoke;
+}
+
+#buy {
+font-size: large;
+width: 25%;
+}
+
+#ownerMobile {
+line-height: 30px;
+}
+
+#mobileNumber {
+font-style: italic;
+font-size: large;
+}
+
+#ownerName {
+color:brown; 
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+font-style: oblique;
+font-weight: bolder;
+font-size: large;
+}
+
+.centre {
+margin-top: 5%;
+}
+
+#ownerLogo ,#ownerCallLogo{
+margin-right: 2%;
+}

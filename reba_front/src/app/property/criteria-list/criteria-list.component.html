@@ -1,0 +1,72 @@
+<div class="box1">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fas fa-home"></i> Reba</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="logout()"><i class="fas fa-sign-out-alt"></i> LogOut</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Jumbotron here-->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron">
+                <div class="container"><br>
+                    <h1>Reba Property</h1>
+                    <p class="lead">Let's Make Your Dream House Together!</p>
+                    <!-- <button class="btn btn-primary" *ngIf="!isCustomer" id="property" [routerLink]="['/myproperties']">My Properties</button>
+                    <button class="btn btn-primary" *ngIf="isCustomer" id="deals" [routerLink]="['/deals']">My Deals</button>
+                    <button class="btn btn-primary" *ngIf="isCustomer" id="criteria" [routerLink]="['/criteria']">Find By Criteria</button>
+                    <button class="btn btn-primary" id="profile" [routerLink]="['/profile']">My Profile</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Card Here-->
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4" *ngFor='let prop of properties'>
+                    <div class="card mx-30">
+                        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGhvbWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <span>
+                                <h5 class="card-title">{{prop.propConfig}} </h5>
+                            </span>
+                            <span class="badge badge-secondary" id="badgee">
+                                <h5 class="animate_animated animate_bounce">{{prop.offerType}} </h5>
+                            </span>
+                            <span class="badge badge-secondary" id="badgee">
+                                <h5 class="animate_animated animate_bounce">{{prop.areaSqft}} Sq.Ft. </h5>
+                            </span>
+                            <div class="centre">
+                                <h6> {{prop.address}}, {{prop.street}},{{prop.city}} </h6>
+                                <span id="ownerLogo" class="material-icons"> person_outline</span>
+                                <span id="ownerName"><b>{{prop.brokerPojo.userName}}</b></span>
+                                <div id="ownerMobile"><span id="ownerCallLogo" class="material-icons">call</span>
+                                    <span id="mobileNumber">{{prop.brokerPojo.userMobile}}</span>
+                                </div>
+                                <h5>Rs.{{prop.offerCost}}</h5>
+                                <button id="buy" class="btn btn-success btn-sm float-centre" type="submit"
+                                    (click)="buy(prop.propId)">
+                                    Buy
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
